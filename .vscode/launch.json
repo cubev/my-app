@@ -1,0 +1,39 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      // Debug: aktuelles JavaScript/TypeScript-File (Node)
+      "type": "node",
+      "request": "launch",
+      "name": "Node: Current File",
+      "program": "${file}",
+      "cwd": "${workspaceFolder}",
+      "runtimeArgs": [],
+      "envFile": "${workspaceFolder}/.env",
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"]
+    },
+    {
+      // Debug: npm run dev (lädt .env)
+      "type": "node",
+      "request": "launch",
+      "name": "Node: npm run dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env",
+      "console": "integratedTerminal"
+    },
+    {
+      // OPTIONAL: Python-Start (wenn du Python nutzt)
+      "name": "Python: Current File",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env",
+      "python": "${workspaceFolder}/.venv/bin/python"
+    }
+  ]
+}

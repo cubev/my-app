@@ -1,0 +1,42 @@
+{
+  // Editor-Basics
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.tabSize": 2,
+  "editor.rulers": [100],
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.eol": "\n",
+
+  // JS/TS Format/Lint
+  "prettier.printWidth": 100,
+  "prettier.singleQuote": true,
+  "prettier.semi": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "json"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+
+  // Terminal
+  "terminal.integrated.defaultProfile.osx": "zsh",
+
+  // NPM / Scripts
+  "npm.packageManager": "npm",
+  "npm.autoDetect": "on",
+
+  // REST Client – verwende System-ENV (OPENAI_API_KEY)
+  "rest-client.environmentVariables": {
+    "$shared": {
+      "OPENAI_API_KEY": "${env:OPENAI_API_KEY}"
+    }
+  },
+
+  // Python (falls genutzt)
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+  "python.analysis.autoImportCompletions": true,
+
+  // IntelliSense für ES-Module
+  "javascript.suggest.autoImports": true,
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true
+}

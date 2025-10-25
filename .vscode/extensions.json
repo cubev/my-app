@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "GitHub.vscode-pull-request-github",
+    "eamodio.gitlens",
+    "humao.rest-client",
+    "rangav.vscode-thunder-client",
+    "ms-vscode-remote.remote-containers",
+    "ms-python.python",
+    "ms-toolsai.jupyter"
+  ]
+}

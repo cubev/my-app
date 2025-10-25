@@ -1,0 +1,26 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node src/openai-test.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cubev/my-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/cubev/my-app/issues"
+  },
+  "homepage": "https://github.com/cubev/my-app#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "openai": "^6.7.0"
+  }
+}
